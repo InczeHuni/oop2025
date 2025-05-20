@@ -38,7 +38,13 @@ public class Main {
         customer2.getAccount(account4.getAccountNumber()).deposit(2500);
         System.out.println("Customer with ID 2:");
         System.out.println(otpBank.getCustomer(2));
+        ArrayList <String> numbers=customer2.getAccountNumbers();
+        System.out.println(numbers);
+        System.out.println(otpBank.getCustomer(1));
         otpBank.printCustomersToFile("bank_customers.csv");
+        otpBank.printCustomersToStdout();
+        System.out.println(otpBank.numCustomers());
+        System.out.println(customer1);
     }
 
 
